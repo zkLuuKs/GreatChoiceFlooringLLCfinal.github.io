@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Great Choice Flooring LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo">
+                    <img src="images/ZK FLOORING (2).svg" alt="Logo">
+                </a>
+                <nav>
+                    <ul class="sidebar" >
+                        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Contact.html" class="navbar_links navbar_btn">Contact Us</a></li>
+                        
+                    </ul>
+                    <ul class="navbar_menu" id="navbar_menu">
+                        <li class="hideOnMobile"><a href="index.html" class="navbar_links navbar_btn">Home</a></li>
+                        <li class="hideOnMobile"><a href="Contact.html" class="navbar_links navbar_btn">Contact Us</a></li>
+                        <li class="menu-button"onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <script>
+                    function showSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                     const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+                </script> 
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out using the details below, and we’ll get back to you shortly.</p>
+        <div class="contact_details">
+            <p><strong>Phone:</strong> +1 (732) 245-6479 (Text or call)</p>
+            <p><strong>Email:</strong> <a href="mailto:readir@gmail.com">readir@gmail.com</a></p>
+            <p><strong>Hours:</strong> <a>Mon-Sat 8am-6pm</a></p>
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer_container">
+            <p>&copy; 2024 Great Choice Flooring LLC.</p>
+        </div>
+    </footer>
+</body>
+</html>
